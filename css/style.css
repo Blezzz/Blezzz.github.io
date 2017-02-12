@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px; /* navbar */
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    //background-color: #f4f4f4;
+}
+
+.container {
+//border: 1px solid red;    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-custom {
+    //border: none;
+    background-color: #fff;    
+}
+
+.navbar-custom .nav > li > a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navbar-custom .nav > li > a:hover { 
+    color: #d9534f;
+}
+
+.header {
+height: 100vh;
+    //background-color: #f4f4f4;
+    //background: url("../img/bg-header.png") no-repeat 50%;
+}
+
+.header__all-devices {
+    //max-width: 80%;
+    //margin: 0 10%;
+    //margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header__device {
+
+}
+
+.header__title {
+    margin: 5px 0 15px 0;
+    font-size: 36px;
+}
+
+.header__sentence {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header__btn {
+    //display: block;
+    //width: 100px;
+    //margin: 20px auto 0 auto;
+    padding: 6px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.about {
+//height: 100vh;
+    //background-color: #a6def5;
+}
+
+.about-row-1 {
+    //margin-bottom: 100px;
+    //margin-bottom: 50vh;
+    margin: 20vh 0 50vh 0;
+}
+
+.about__title {
+    margin: 50px 0 100px 0;
+    font-size: 36px;  
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about__sentence {
+    position: relative;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+color: gray;
+}
+
+.about__sentence::before {
+    content: "";
+    position: absolute;    
+}
+
+.about__btn {
+    display: block;
+    //width: 100px;
+    margin: 20px auto 0 auto;
+    padding: 6px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.about-row-2,
+.about-row-6 {
+height: 100vh;  
+    margin-bottom: 50vh;
+}
+
+.about-row-3,
+.about-row-4,
+.about-row-5 {
+    margin-bottom: 25vh;
+}
+
+.about__title-2 {
+    //margin: 50px 0;
+    margin: 30vh 0 20px 20px;
+    font-size: 26px;  
+    font-weight: 700;
+    //text-align: center;    
+    text-transform: uppercase;
+}
+
+.about__sentence-2 {
+    position: relative;
+    margin: 0;
+    margin-left: 20px;
+    //margin-top: 100px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: gray;
+    //text-align: center;
+}
+
+.details {
+//height: 100vh;
+    //margin: 20vh 0 50vh 0;
+    padding-top: 20vh;
+}
+
+.details__title {
+    margin: 50px 0 100px 0;
+    font-size: 36px;  
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.photo {
+//height: 100vh;
+    //margin: 20vh 0 50vh 0;
+    padding-top: 20vh;
+}
+
+.photo__title {
+    margin: 50px 0 100px 0;
+    font-size: 36px;  
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reviews {
+height: 100vh;
+    //margin: 20vh 0 50vh 0;
+    padding-top: 20vh;
+}
+
+.reviews__title {
+    margin: 50px 0 100px 0;
+    font-size: 36px;  
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+tbody > tr > td {
+    color: gray;
+}
+
+tbody > tr > td:first-child {
+    width: 50%;
+    text-align: right;
+}
+
+.buy {
+//height: 100vh;
+    //margin: 20vh 0 50vh 0;
+    padding: 20vh 0;
+}
+
+.buy__title {
+    margin: 50px 0 25px 0;
+    font-size: 36px;  
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.buy__sentence {
+    margin: 0;
+    margin-bottom: 25px;
+    //margin-left: 20px;
+    //margin-top: 100px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: gray;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: auto;
+}
+
+.buy__btn {
+    width: 100%;
+}
+
+.footer {
+   text-align: center;
+}
+
+
+
+@media(min-width: 768px) {
+    .header__device {
+        margin-top: 20px;
+    }
+    
+    .header__btn {
+        margin-top: 60px;
+    }
+    
+    form {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
