@@ -311,30 +311,41 @@ Lorem ipsum dolor sit amet, esse assum recteque at has. Ea eam sapientem princip
         <h2 class="buy__title">Покупайте сейчас</h2>      
         <p class="buy__sentence">Укажите ваши контактные данные для оформления заказа</p>      
         
-        <form class="buy__form" role="form" action="#" method="post">         
+        <form class="buy__form" role="form" action="index.php" method="post">         
             <label for="exampleInputName1"></label>
-            <input type="text" class="form-control" id="exampleInputName1" placeholder="Ваше имя">           
+            <input type="text" class="form-control" id="exampleInputName1" name="name" placeholder="Ваше имя *" required>         
 
             <label for="exampleInputPhone1"></label>
-            <input type="tel" class="form-control" id="exampleInputPhone1" placeholder="Номер телефона">
+            <input type="tel" class="form-control" id="exampleInputPhone1" name="phone" placeholder="Номер телефона *" required>
 
             <label for="exampleInputEmail1"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Адрес электронной почты">
+            <input type="email" class="form-control" id="exampleInputEmail1" name="mail" placeholder="Адрес электронной почты">
                 
             <br>
             
-            <textarea class="form-control" rows="5" placeholder="Ваш комментарий к заказу"></textarea>
-            
-            <!--<label for="exampleInputNumber1">Количество</label>-->
+            <textarea class="form-control" rows="5" name="comment" placeholder="Ваш комментарий к заказу"></textarea>
+                 
             <br>
             
-            Количество
-                <input type="number" class="form-control" name="exampleInputNumber1" min="1" max="100">            
-                 
+            <div class="row form-inline">
+                <div class="form-group col-sm-4">
+                    <label>Количество</label>
+                    <input type="number" class="form-control" name="number" min="1" max="100" value="1" required> 
+                </div>
+                <div class="form-group col-sm-4 col-sm-offset-4">
+                    <label>Цвет</label>
+                    <select class="form-control" name="color" required>
+                        <option>Черный</option>
+                        <option>Белый</option>
+                    </select>
+                </div>
+            </div>
+            
             <br>
             
             <button type="submit" class="buy__btn btn btn-danger">Заказать</button>
         </form>
+        
     </div>    
     
     
