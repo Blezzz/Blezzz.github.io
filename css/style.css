@@ -7,12 +7,21 @@ body {
 }
 
 .container {
-//border: 1px solid red;    
+..border: 1px solid red;    
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    padding-top: 10px;
+    padding-left: 15px;
 }
 
 .navbar {
@@ -78,7 +87,7 @@ height: 100vh;
 .about-row-1 {
     //margin-bottom: 100px;
     //margin-bottom: 50vh;
-    margin: 20vh 0 50vh 0;
+    margin: 20vh 0 20vh 0;
 }
 
 .about__title {
@@ -114,6 +123,10 @@ color: gray;
     padding: 6px 15px;
     font-size: 18px;
     text-transform: uppercase;
+}
+
+.about-brand {
+    margin: 0 0 50vh 30px;
 }
 
 .about-row-2,
@@ -177,7 +190,7 @@ height: 100vh;
 }
 
 .reviews {
-height: 100vh;
+//height: 100vh;
     //margin: 20vh 0 50vh 0;
     padding-top: 20vh;
 }
@@ -224,16 +237,60 @@ tbody > tr > td:first-child {
     text-align: center;
 }
 
+.gallery img {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
 input[type="number"] {
-    width: auto;
+    //width: auto;
+    //width: 50%;
+}
+
+.form-control {
+    color: gray;
+}
+
+.form-control[readonly] {
+    background-color: #fff;
+}
+
+.form-group label {
+    color: gray;
+    font-weight: 400;
+}
+
+option {
+    color: gray;
+}
+
+textarea {
+    resize: none;
 }
 
 .buy__btn {
     width: 100%;
+    font-size: 14px;
 }
 
 .footer {
+    padding: 20px 0;
    text-align: center;
+}
+
+.footer__copyright {
+    color: gray;
+}
+
+.footer__privacy {
+    color: gray;
+    text-decoration: underline;
+}
+
+.footer__privacy:hover {
+    color: #000;
 }
 
 
@@ -250,5 +307,9 @@ input[type="number"] {
     form {
         width: 40%;
         margin: 0 auto;
+    }
+    
+    .form-inline .form-control {
+        width: 100%;
     }
 }
