@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Air-video</title>
-<link rel="stylesheet" href="css/temp.css">
-    <link rel="stylesheet" href="css/style.css">    
+<link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">  
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,29 +15,29 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body id="page-top">
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="" name="page-top">Logo</a>
+                <a class="navbar-brand page-scroll" href="#page-top" name="page-top">
+                    <img src="img/logo.png" width="" height="" alt="">
+                </a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden"><a href="#page-top"></a></li>
-                    <li><a href="#about">О продукте</a></li>
-                    <li><a href="#details">Характеристики</a></li>
-                    <li><a href="#photo">Фото</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#buy">Купить</a></li>
+                    <li><a class="page-scroll" href="#about">Об устройстве</a></li>
+                    <li><a class="page-scroll" href="#details">Характеристики</a></li>
+                    <li><a class="page-scroll" href="#photo">Фото</a></li>
+                    <li><a class="page-scroll" href="#reviews">Отзывы</a></li>
+                    <li><a class="page-scroll" href="#buy">Купить</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -65,7 +65,7 @@
                 <p class="header__sentence">С помощью данного устройства Вы с легкостью сделаете из любого телевизора или монитора smart-TV.</p>
             </div>
             <div class="col-sm-1">
-                <button type="button" class="header__btn btn btn-danger">Купить</button>
+                <a class="page-scroll" href="#buy"><button type="button" class="header__btn btn btn-danger">Купить</button></a>
             </div>
         </div> 
     </header>    
@@ -111,13 +111,28 @@
                     <p class="about__sentence">Возможность делиться с окружающими</p>
                 </div>
             </div> 
+            
+            <div class="about-brand row">
+                <div class="col-sm-2 col-sm-offset-2">
+                    <img src="img/sprite/icon-ios.png" width="" height="" alt="">
+                </div>                
+                <div class="col-sm-2">
+                    <img src="img/sprite/icon-windows.png" width="" height="" alt="">
+                </div>                
+                <div class="col-sm-2">
+                    <img src="img/sprite/icon-android.png" width="" height="" alt="">
+                </div>                
+                <div class="col-sm-2">
+                    <img src="img/sprite/icon-mac.png" width="" height="" alt="">
+                </div>
+            </div>
         </div>
         
         <div class="row about-row-2">  
             <div class="col-sm-4">
                 <h2 class="about__title-2">Трансляция изображения</h2>
                 <p class="about__sentence-2">Устройство позволяет передавать изображение с вашего iPhone, iPad, Mac, других девайсов Apple, а также устройст на базе Android, Windows и Windows Mobile на любой телевизор или проектор.</p>
-                <button type="button" class="about__btn btn btn-danger">Купить</button>
+                <a class="page-scroll" href="#buy"><button type="button" class="about__btn btn btn-danger">Купить</button></a>
             </div>               
             <div class="col-sm-8">
                 <img src="img/about-row-2.jpg" width="" height="" alt="">
@@ -131,15 +146,15 @@
             <div class="col-sm-4">
                 <h2 class="about__title-2">Простое маштабирование</h2>
                 <p class="about__sentence-2">Легкость маршабирования позволит вашему даже самому малькому экрану превратиться в большой.</p>
-                <button type="button" class="about__btn btn btn-danger">Купить</button>
+                <a class="page-scroll" href="#buy"><button type="button" class="about__btn btn btn-danger">Купить</button></a>
             </div>
         </div>        
         
         <div class="row about-row-4">  
             <div class="col-sm-4">
                 <h2 class="about__title-2">Игры на большом экране</h2>
-                <p class="about__sentence-2">Lorem ipsum dolor sit amet, esse assum recteque at has. Ea eam sapientem principes, pro sint soluta quaeque ea. Sale laudem sensibus vim ne.</p>
-                <button type="button" class="about__btn btn btn-danger">Купить</button>
+                <p class="about__sentence-2">Испытайте невероятные ощущения от игры на большом экране, превращая игровой процесс в незабываемое времяпрепровождение.</p>
+                <a class="page-scroll" href="#buy"><button type="button" class="about__btn btn btn-danger">Купить</button></a>
             </div>   
             <div class="col-sm-8">
                 <img src="img/about-row-4.jpg" width="" height="" alt="">
@@ -152,16 +167,16 @@
             </div>             
             <div class="col-sm-4">
                 <h2 class="about__title-2">Поддержка Full HD</h2>
-                <p class="about__sentence-2">Lorem ipsum dolor sit amet, esse assum recteque at has. Ea eam sapientem principes, pro sint soluta quaeque ea. Sale laudem sensibus vim ne.</p>
-                <button type="button" class="about__btn btn btn-danger">Купить</button>
+                <p class="about__sentence-2">Устройство полностью поддерживает разрешение 1920x1080, предоставляя вам возможность наслаждаться идеальным качеством вашего любимого фильма.</p>
+                <a class="page-scroll" href="#buy"><button type="button" class="about__btn btn btn-danger">Купить</button></a>
             </div>  
         </div>        
         
         <div class="row about-row-6">  
             <div class="col-sm-4">
                 <h2 class="about__title-2">Кино на большом экране</h2>
-                <p class="about__sentence-2">Lorem ipsum dolor sit amet, esse assum recteque at has. Ea eam sapientem principes, pro sint soluta quaeque ea. Sale laudem sensibus vim ne.</p>
-                <button type="button" class="about__btn btn btn-danger">Купить</button>
+                <p class="about__sentence-2">Идеально подходит, чтобы насладиться большим экраном. Смотрите фильмы, играйте в игры, создавайте свой собственный эксклюзивный кинотеатр.</p>
+                <a class="page-scroll" href="#buy"><button type="button" class="about__btn btn btn-danger">Купить</button></a>
             </div>             
             <div class="col-sm-8">
                 <img src="img/about-row-6.jpg" width="" height="" alt="">
@@ -174,8 +189,8 @@
             </div>              
             <div class="col-sm-4">
                 <h2 class="about__title-2">Онлайн конференции</h2>
-                <p class="about__sentence-2">Lorem ipsum dolor sit amet, esse assum recteque at has. Ea eam sapientem principes, pro sint soluta quaeque ea. Sale laudem sensibus vim ne.</p>
-                <button type="button" class="about__btn btn btn-danger">Купить</button>
+                <p class="about__sentence-2">Ваши деловые встречи станут более эффективными и действенными, благодаря беспроводной связи вы можете свободно перемещаться.</p>
+                <a class="page-scroll" href="#buy"><button type="button" class="about__btn btn btn-danger">Купить</button></a>
             </div> 
         </div>        
         <!--
@@ -198,80 +213,56 @@
             <tbody>               
                 <tr>
                     <td>Процессор:</td>
-                    <td>XXXXXXX</td>
+                    <td>Single-Core Cortex-A9,1.6GHz/1GB</td>
                 </tr>                
                 <tr>
                     <td>Оперативная память:</td>
-                    <td>XXXXXXX</td>
-                </tr>                
-                <tr>
-                    <td>ОС:</td>
-                    <td>XXXXXXX</td>
-                </tr>                
-                <tr>
-                    <td>Wi-Fi Частота:</td>
-                    <td>XXXXXXX</td>
-                </tr>                
-                <tr>
-                    <td>USB:</td>
-                    <td>XXXXXXX</td>
-                </tr>                
+                    <td>DDR3 2GB</td>
+                </tr>                   
                 <tr>
                     <td>Интерфейс:</td>
-                    <td>XXXXXXX</td>
+                    <td>HDMI, USB</td>
                 </tr>                
                 <tr>
                     <td>Выход видео:</td>
-                    <td>XXXXXXX</td>
+                    <td>до 1080p HDMI</td>
                 </tr>                
                 <tr>
-                    <td>Поддержка Интернет Local (Wireless Content) Дисплей:</td>
-                    <td>XXXXXXX</td>
+                    <td>Поддержка:</td>
+                    <td>видео / аудио / фото файлов / офис / веб-сайт</td>
                 </tr>                
                 <tr>
-                    <td>Поддержка программного обеспечения Office (Файл-форматы):</td>
-                    <td>XXXXXXX</td>
+                    <td>Поддержка программного обеспечения Office (файл-форматы):</td>
+                    <td>PDF / MS Word / MS Excel / MS PowerPoint</td>
                 </tr>                
                 <tr>
                     <td>Пульт:</td>
-                    <td>XXXXXXX</td>
+                    <td>Поддержка по телефону / Labtop / Tablet PC</td>
                 </tr>                
                 <tr>
                     <td>Поддерживаемые форматы видео:</td>
-                    <td>XXXXXXX</td>
+                    <td>AVI / DIVX / MKV / TS / DAT / MPG / MPRG / MOV / MP4 / RM / RMVB / WMV</td>
                 </tr>                
                 <tr>
                     <td>Поддержка формат аудио:</td>
-                    <td>XXXXXXX</td>
-                </tr>               
-                <tr>
-                    <td>Запись голоса:</td>
-                    <td>XXXXXXX</td>
+                    <td>MP1 / MP2 / MP3 / WMA / OGG / ADPCM-WAV / PCM-WAV / AA</td>
                 </tr>                
                 <tr>
                     <td>Поддерживаемые форматы фото:</td>
-                    <td>XXXXXXX</td>
+                    <td>JPEG / BMP</td>
                 </tr>                
                 <tr>
                     <td>ScreenShare:</td>
-                    <td>XXXXXXX</td>
-                </tr>                
-                <tr>
-                    <td>Материал:</td>
-                    <td>XXXXXXX</td>
+                    <td>Miracast / DLNA</td>
                 </tr>                
                 <tr>
                     <td>Цвет:</td>
-                    <td>XXXXXXX</td>
+                    <td>Черный / белый</td>
                 </tr>               
                 <tr>
                     <td>Размер:</td>
-                    <td>XXXXXXX</td>
-                </tr>                
-                <tr>
-                    <td>Вес нетто:</td>
-                    <td>XXXXXXX</td>
-                </tr>
+                    <td>75 x 30 x 11 мм</td>
+                </tr> 
             </tbody>
         </table>
     </div>   
@@ -281,19 +272,25 @@
         <h2 class="photo__title">Фото</h2>  
 <!-- TEMP -->
 <div class="row">
-    <div class="col-sm-3 col-sm-offset-3">
-        <img src="img/device-b.png">
+    <div class="gallery col-sm-4">   
+        <img src="img/gallery-b1.png" width="" height="" alt="">
     </div>    
-    <div class="col-sm-3">
-        <img src="img/device-b.png">
+    <div class="gallery col-sm-4">
+        <img src="img/gallery-b2.png" width="" height="" alt="">
+    </div>    
+    <div class="gallery col-sm-4">
+        <img src="img/gallery-b3.png" width="" height="" alt="">
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-3 col-sm-offset-3">
-        <img src="img/device-b.png">
+    <div class="gallery col-sm-4">
+        <img src="img/gallery-w3.png" width="" height="" alt="">
+    </div>      
+    <div class="gallery col-sm-4">
+        <img src="img/gallery-w2.png" width="" height="" alt="">
     </div>    
-    <div class="col-sm-3">
-        <img src="img/device-b.png">
+    <div class="gallery col-sm-4">
+        <img src="img/gallery-w1.png" width="" height="" alt="">
     </div>
 </div>
     </div>
@@ -301,9 +298,34 @@
     
     <div id="reviews" class="reviews container">
         <h2 class="reviews__title">Отзывы</h2> 
-        
-Lorem ipsum dolor sit amet, esse assum recteque at has. Ea eam sapientem principes, pro sint soluta quaeque ea. Sale laudem sensibus vim ne.
-        
+        <blockquote>
+            <p>Получили вовремя, все как описано, в отличном состоянии. Спасибо.</p>
+            <footer>Игорь</footer>
+        </blockquote>        
+        <blockquote class="blockquote-reverse">
+            <p>Посылка дошла быстро.  Подключение простое, разберется даже ребенок. Есть мануалы на YouTube. Вообще впечатления положительное. Рекомендую.</p>
+            <footer>Андрей</footer>
+        </blockquote>        
+        <blockquote>
+            <p>Простой в настройке и использовании, очень хорошая картинка на youtube.</p>
+            <footer>Сергей</footer>
+        </blockquote>
+        <blockquote class="blockquote-reverse">
+            <p>Пришло быстро. отлично работает. Муж с работы прийдет, опробует.</p>
+            <footer>Татьяна</footer>
+        </blockquote>        
+        <blockquote>
+            <p>Хотел купить Apple TV, но обратил внимание на этот товар, решил рискнуть и результатом был поражен! Вещь супер! Настроил за 5 минут! Работает прекрасно! Рекомендую!</p>
+            <footer>Петр</footer>
+        </blockquote>
+        <blockquote class="blockquote-reverse">
+            <p>Отличный продукт ... простой в использовании ... хочу купить еще один в подарок брату ...</p>
+            <footer>Илья</footer>
+        </blockquote>   
+        <blockquote>
+            <p>Устройство то, что надо. Буду рекомендовать друзьям!</p>
+            <footer>Андрей</footer>
+        </blockquote>        
     </div>    
         
     
@@ -313,13 +335,28 @@ Lorem ipsum dolor sit amet, esse assum recteque at has. Ea eam sapientem princip
         
         <form class="buy__form" role="form" action="index.php" method="post">         
             <label for="exampleInputName1"></label>
-            <input type="text" class="form-control" id="exampleInputName1" name="name" placeholder="Ваше имя *" required>         
+            <div class="input-group">   
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                </div>
+                <input type="text" class="form-control" id="exampleInputName1" name="name" placeholder="Ваше имя *" required>         
+            </div>
 
             <label for="exampleInputPhone1"></label>
-            <input type="tel" class="form-control" id="exampleInputPhone1" name="phone" placeholder="Номер телефона *" required>
+            <div class="input-group">   
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                </div>
+                <input type="tel" class="form-control" id="exampleInputPhone1" name="phone" placeholder="Номер телефона *" required>
+            </div>    
 
             <label for="exampleInputEmail1"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" name="mail" placeholder="Адрес электронной почты">
+            <div class="input-group">   
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                </div>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="mail" placeholder="Адрес электронной почты">
+            </div>
                 
             <br>
             
@@ -330,41 +367,51 @@ Lorem ipsum dolor sit amet, esse assum recteque at has. Ea eam sapientem princip
             <div class="row form-inline">
                 <div class="form-group col-sm-4">
                     <label>Количество</label>
-                    <input type="number" class="form-control" name="number" min="1" max="100" value="1" required> 
+                    <input type="number" class="number form-control" name="number" min="1" max="100" value="1" required onchange="calculation()"> 
                 </div>
-                <div class="form-group col-sm-4 col-sm-offset-4">
+                <div class="form-group col-sm-4">
                     <label>Цвет</label>
                     <select class="form-control" name="color" required>
                         <option>Черный</option>
                         <option>Белый</option>
                     </select>
                 </div>
+                <div class="form-group col-sm-4">
+                    <label>Цена</label>
+                    <div class="input-group">                        
+                        <input type="text" class="price form-control" name="price" value="777" readonly> 
+                        <div class="input-group-addon">грн.</div>
+                    </div>
+                </div>                
             </div>
             
             <br>
             
             <button type="submit" class="buy__btn btn btn-danger">Заказать</button>
         </form>
-        
     </div>    
     
     
     <footer class="footer container">
         <div class="row">
             <div class="col-sm-4">
-                Logo
+                <a class="page-scroll" href="#page-top" name="page-top">
+                    <img src="img/logo.png" width="" height="" alt="">
+                </a>
+            </div>            
+            <div class="footer__copyright col-sm-4">
+                &copy; 2017
             </div>            
             <div class="col-sm-4">
-                &copy;
-            </div>            
-            <div class="col-sm-4">
-                E-mail
+                <a class="footer__privacy" href="#">Оплата, гарантия, доставка</a>
             </div>  
         </div>
     </footer>
     
     
     <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.min.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>
